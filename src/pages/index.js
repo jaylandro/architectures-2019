@@ -6,6 +6,7 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 
 import { initAuth } from '../app/services/auth'
+import { white } from 'ansi-colors';
 initAuth()
 
 class IndexPage extends React.Component {
@@ -28,6 +29,9 @@ class IndexPage extends React.Component {
           style={{
             display: 'flex',
             justifyContent: 'space-between',
+            background: 'rgba(255,255,255,0.7)',
+            borderRadius: '3px',
+            padding: '1.3em',
           }}
         >
           <div>
@@ -88,19 +92,16 @@ class IndexPage extends React.Component {
                 : 'click the button and watch this!'}
             </pre>
           </div>
-          <div
-            style={{
-              borderLeft: 'brown',
-              borderLeftStyle: 'dashed',
-              paddingLeft: '3rem',
-            }}
-          >
+          <div>
             <p>Now go build something great.</p>
             <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
               <Image />
             </div>
           </div>
         </div>
+        <video autoPlay loop id="video-background">
+            <source src="/static/optim.mp4" type="video/mp4" />
+        </video>
       </Layout>
     )
   }
