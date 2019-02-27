@@ -6,7 +6,9 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 
 import { initAuth } from '../app/services/auth'
-import { white } from 'ansi-colors';
+import { white } from 'ansi-colors'
+import bgVideo from '../images/optim.mp4'
+
 initAuth()
 
 class IndexPage extends React.Component {
@@ -100,7 +102,7 @@ class IndexPage extends React.Component {
           </div>
         </div>
         <video autoPlay loop id="video-background">
-            <source src="/static/optim.mp4" type="video/mp4" />
+            <source src={bgVideo}type="video/mp4" />
         </video>
       </Layout>
     )
