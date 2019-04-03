@@ -41,44 +41,6 @@ class IndexPage extends React.Component {
               Welcome to your new Gatsby + Netlify Functions + Netlify Identity
               site
             </p>
-            <ul>
-              <li>
-                This site has statically generated marketing pages like this one
-                and <Link to="/page-2/">page 2.</Link>{' '}
-              </li>
-              <li>
-                It also has a dynamically generated clientside app guarded by
-                authentication:
-                <ul>
-                  <li>
-                    <Link to="/app/">
-                      <b>Go to App (with Netlify Identity)</b>
-                    </Link>{' '}
-                  </li>
-                </ul>
-              </li>
-              <li>
-                You can{' '}
-                <a href="https://github.com/sw-yx/jamstack-hackathon-starter">
-                  view source here
-                </a>
-              </li>
-              <li>
-                or see{' '}
-                <a href="https://youtu.be/bueXJInQt2c">
-                  the Youtube walkthrough
-                </a>
-              </li>
-              <li>
-                or&nbsp;
-                 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/sw-yx/jamstack-hackathon-starter&stack=cms">
-                  <img
-                    src="https://www.netlify.com/img/deploy/button.svg"
-                    alt="Deploy to Netlify"
-                  />
-                </a>
-              </li>
-            </ul>
             <hr />
             <p>
               You can still access Netlify functions even on static "marketing
@@ -94,16 +56,7 @@ class IndexPage extends React.Component {
                 : 'click the button and watch this!'}
             </pre>
           </div>
-          <div>
-            <p>Now go build something great.</p>
-            <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-              <Image />
-            </div>
-          </div>
         </div>
-        <video autoPlay loop id="video-background">
-            <source src={bgVideo}type="video/mp4" />
-        </video>
       </Layout>
     )
   }
